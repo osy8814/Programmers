@@ -13,8 +13,7 @@ public class Lessons_120889 {
 }
 class Solution {
     public int solution(int[] sides) {
-        int MaxSides = Arrays.stream(sides).max().getAsInt();
-        int OthersSum = Arrays.stream(sides).sum()-MaxSides;
-        return MaxSides>=OthersSum ? 2 : 1;
+        Arrays.sort(sides);
+        return sides[2]>=sides[0]+sides[1] ? 2 : 1;
     }
 }
