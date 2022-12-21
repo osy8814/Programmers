@@ -1,7 +1,6 @@
 package Lessons_120889;
 
 import java.util.Arrays;
-import java.util.OptionalInt;
 
 public class Lessons_120889 {
 
