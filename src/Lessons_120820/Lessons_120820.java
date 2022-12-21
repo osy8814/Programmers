@@ -15,7 +15,8 @@ class Solution {
     public int solution(int age) {
         Calendar calendar = Calendar.getInstance();
         int thisYear = calendar.get(Calendar.YEAR);
-        System.out.println(thisYear);
+        
+//        return thisYear-age+1;
     	return 2022-age+1;
     }
 }
