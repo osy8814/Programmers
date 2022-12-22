@@ -10,9 +10,9 @@ public class Lessons_120818 {
 }
 class Solution {
     public int solution(int price) {
-        if(price>=100000) {
+        if(price>=100000 && price<300000) {
         	return (int) (price*0.95);
-        }else if (price>=300000) {
+        }else if (price>=300000 && price<500000) {
 			return (int) (price*0.9);
 		}else if (price>=500000) {
 			return (int) (price*0.8);
