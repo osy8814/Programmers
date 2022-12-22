@@ -3,6 +3,7 @@ package Lessons_120822;
 public class Lessons_120822 {
 
 	public static void main(String[] args) {
+//		Solution1 solution = new Solution1();
 		Solution2 solution = new Solution2();
 		System.out.println(solution.solution("jaron"));
 	}
