@@ -10,13 +10,23 @@ public class Lessons_120893 {
 	}
 
 }
+//class Solution {
+//    public String solution(String my_string) {
+//        String[] arr = my_string.split("");
+//        String answer = "";
+//        
+//        for (int i = 0; i < arr.length; i++) {
+//			answer += Pattern.matches("[a-z]", arr[i]) ? arr[i].toUpperCase() : arr[i].toLowerCase();		
+//		}        
+//        return answer;
+//    }
+//}
+
 class Solution {
     public String solution(String my_string) {
-        String[] arr = my_string.split("");
         String answer = "";
-        
-        for (int i = 0; i < arr.length; i++) {
-			answer += Pattern.matches("[a-z]", arr[i]) ? arr[i].toUpperCase() : arr[i].toLowerCase();		
+    	for (int i = 0; i < my_string.length(); i++) {
+			answer += Character.isLowerCase(my_string.charAt(i)) ? Character.toUpperCase(my_string.charAt(i)) :	Character.toLowerCase(my_string.charAt(i));
 		}        
         return answer;
     }
