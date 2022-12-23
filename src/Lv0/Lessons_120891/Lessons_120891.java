@@ -12,7 +12,8 @@ public class Lessons_120891 {
 }
 
 class Solution {
-    public int solution(int order) {
-        return (int) Arrays.stream(String.valueOf(order).split("")).filter(x->Integer.parseInt(x)%3==0).count();
-    }
+	public int solution(int order) {
+		return (int) Arrays.stream(String.valueOf(order).split(""))
+				.filter(x -> !x.equals("0") && Integer.parseInt(x) % 3 == 0).count();
+	}
 }
