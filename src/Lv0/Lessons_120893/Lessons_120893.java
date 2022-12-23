@@ -1,6 +1,6 @@
 package Lv0.Lessons_120893;
 
-import java.util.regex.Pattern;
+//import java.util.regex.Pattern;
 
 public class Lessons_120893 {
 
@@ -23,11 +23,12 @@ public class Lessons_120893 {
 //}
 
 class Solution {
-    public String solution(String my_string) {
-        String answer = "";
-    	for (int i = 0; i < my_string.length(); i++) {
-			answer += Character.isLowerCase(my_string.charAt(i)) ? Character.toUpperCase(my_string.charAt(i)) :	Character.toLowerCase(my_string.charAt(i));
-		}        
-        return answer;
-    }
+	public String solution(String my_string) {
+		String answer = "";
+		for (int i = 0; i < my_string.length(); i++) {
+			answer += Character.isLowerCase(my_string.charAt(i)) ? Character.toUpperCase(my_string.charAt(i))
+					: Character.toLowerCase(my_string.charAt(i));
+		}
+		return answer;
+	}
 }
