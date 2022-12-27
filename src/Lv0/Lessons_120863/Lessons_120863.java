@@ -38,7 +38,5 @@ class Solution {
     	}else {
     		return x==1 ? "x + "+number : x+"x + "+number;
     	}
-    	
-    	
-    }
+     }
 }
