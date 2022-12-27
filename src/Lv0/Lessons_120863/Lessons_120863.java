@@ -29,14 +29,14 @@ class Solution {
 					}
 				}
 			}
-    		
-		}
-    	if(x==0) {
+    	}
+    	
+        if(x==0) {
     		return number+"";
     	}else if(number==0) {
-    		return  x+"x";
+    		return x==1 ? "x" : x+"x";
     	}else {
-    		return x+"x + "+number;
+    		return x==1 ? "x + "+number : x+"x + "+number;
     	}
     	
     	
